@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="XamarinLayout.Views.SampleEventsPage"
+    xmlns:local="clr-namespace:XamarinLayout.Models"
+    BackgroundColor="#EFEFF4"
+    Title="MyClient"
+    >
+    <StackLayout>
+        <StackLayout Padding="20,30,10,0" Orientation="Horizontal">
+            <Label TextColor="#78969B" FontSize="13">Today</Label>
+            <Label TextColor="#78969B" FontSize="13" HorizontalOptions="EndAndExpand">Tuesday, February 27</Label>
+        </StackLayout>
+        <ListView ItemsSource="{x:Static local:EventData.AllEvents}"
+                  HasUnevenRows="true"
+                  SeparatorVisibility="None"
+                  BackgroundColor="#EFEFF4"
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="200">
+                        <ContentView Margin="10" BackgroundColor="White">
+                            <Grid RowSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="4*" />
+                                    <ColumnDefinition Width="2*" />
+                                </Grid.ColumnDefinitions>
+
+                                <BoxView Color="{Binding Color}" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" />
+
+                                <Label Text="{Binding Time}" Margin="0,10,0,0"
+                                       Grid.Row="0" Grid.Column="1" />
+
+                                <Label Text="{Binding Title}" Grid.Row="0" Grid.Column="2" />
+
+                                <Label Text="{Binding Length}" Grid.Row="1" Grid.Column="1" TextColor="Silver" FontSize="Small" />
+
+                                <Label Text="{Binding Location}" FontSize="Small" TextColor="Gray"  Grid.Row="1" Grid.Column="2" />
+
+                                <Label Text="{Binding Address}" FontSize="Small" TextColor="Gray" Grid.Row="2" Grid.Column="2" />
+
+                                <Label Text="{Binding Status}" TextColor="{Binding Color}" FontSize="Small" FontAttributes="Bold" Grid.Row="3" Grid.Column="2" />
+
+                                <Label Text="{Binding Assignment}" FontSize="Small" FontAttributes="Bold" Grid.Row="4" Grid.Column="2" />
+
+                                <Label Text=">" TextColor="{Binding Color}" Grid.Row="1" Grid.Column="3" Grid.RowSpan="2" HorizontalTextAlignment="Center"
+                                       FontAttributes="Bold" FontSize="Large" />
+                            </Grid>
+                        </ContentView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

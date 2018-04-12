@@ -1,5 +1,10 @@
 ﻿using Xamarin.Forms;
 
+using Xamarin.Forms.Xaml;
+using XamarinLayout.Views;
+
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+             
 namespace XamarinLayout
 {
     public partial class App : Application
@@ -8,7 +13,8 @@ namespace XamarinLayout
         {
             InitializeComponent();
 
-            MainPage = new XamarinLayoutPage();
+            //MainPage = new XamarinLayoutPage();
+            MainPage = new NavigationPage(new SampleEventsPage());
         }
 
         protected override void OnStart()
