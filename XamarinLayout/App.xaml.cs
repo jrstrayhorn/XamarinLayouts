@@ -2,6 +2,7 @@
 
 using Xamarin.Forms.Xaml;
 using XamarinLayout.Views;
+using XamarinLayout.Views.TabbedPageSample;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
              
@@ -14,7 +15,8 @@ namespace XamarinLayout
             InitializeComponent();
 
             //MainPage = new XamarinLayoutPage();
-            MainPage = new NavigationPage(new SampleEventsPage());
+            //MainPage = new NavigationPage(new SampleEventsPage());
+            MainPage = new SampleTabbedPage();
         }
 
         protected override void OnStart()

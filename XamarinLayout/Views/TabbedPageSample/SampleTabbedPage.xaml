@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="XamarinLayout.Views.TabbedPageSample.SampleTabbedPage"
+    xmlns:local="clr-namespace:XamarinLayout.Views"
+    >
+    <NavigationPage Title="Home" BarBackgroundColor="#007AFF" BarTextColor="White">
+        <x:Arguments>
+            <local:SamplePage1 />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Calendar" BarBackgroundColor="#007AFF" BarTextColor="White">
+        <x:Arguments>
+            <local:SamplePage1 />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Add" BarBackgroundColor="#007AFF" BarTextColor="White">
+        <x:Arguments>
+            <local:SamplePage1 />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Activity" BarBackgroundColor="#007AFF" BarTextColor="White">
+        <x:Arguments>
+            <local:SamplePage1 />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Account" BarBackgroundColor="#007AFF" BarTextColor="White">
+        <x:Arguments>
+            <local:SamplePage1 />
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

@@ -34,6 +34,30 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\TabbedPageSample\SamplePage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TabbedPageSample\SamplePage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TabbedPageSample\SamplePage3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TabbedPageSample\SamplePage4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TabbedPageSample\SamplePage5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TabbedPageSample\SampleTabbedPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -48,10 +72,29 @@
     <Compile Include="Views\SampleEventsPage.xaml.cs">
       <DependentUpon>SampleEventsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TabbedPageSample\SamplePage1.xaml.cs">
+      <DependentUpon>SamplePage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TabbedPageSample\SamplePage2.xaml.cs">
+      <DependentUpon>SamplePage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TabbedPageSample\SamplePage3.xaml.cs">
+      <DependentUpon>SamplePage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TabbedPageSample\SamplePage4.xaml.cs">
+      <DependentUpon>SamplePage4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TabbedPageSample\SamplePage5.xaml.cs">
+      <DependentUpon>SamplePage5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TabbedPageSample\SampleTabbedPage.xaml.cs">
+      <DependentUpon>SampleTabbedPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Views\" />
+    <Folder Include="Views\TabbedPageSample\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

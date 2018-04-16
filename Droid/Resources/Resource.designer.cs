@@ -4316,6 +4316,9 @@ namespace XamarinLayout.Droid
 			// aapt resource value: 0x7f0b000e
 			public const int CardView_Light = 2131427342;
 			
+			// aapt resource value: 0x7f0b018c
+			public const int MyCustomTabText = 2131427724;
+			
 			// aapt resource value: 0x7f0b0189
 			public const int MyTheme = 2131427721;
 			
