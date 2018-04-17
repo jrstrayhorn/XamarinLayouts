@@ -2,6 +2,7 @@
 
 using Xamarin.Forms.Xaml;
 using XamarinLayout.Views;
+using XamarinLayout.Views.PickerNavigation;
 using XamarinLayout.Views.TabbedPageSample;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -16,7 +17,8 @@ namespace XamarinLayout
 
             //MainPage = new XamarinLayoutPage();
             //MainPage = new NavigationPage(new SampleEventsPage());
-            MainPage = new SampleTabbedPage();
+            //MainPage = new SampleTabbedPage();
+            MainPage = new NavigationPage(new PickNavMainPage());
         }
 
         protected override void OnStart()

@@ -58,6 +58,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\PickerNavigation\PickNavMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PickerNavigation\ContactMethodsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -90,11 +98,19 @@
     <Compile Include="Views\TabbedPageSample\SampleTabbedPage.xaml.cs">
       <DependentUpon>SampleTabbedPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\PickerNavigation\PickNavMainPage.xaml.cs">
+      <DependentUpon>PickNavMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PickerNavigation\ContactMethodsPage.xaml.cs">
+      <DependentUpon>ContactMethodsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContactMethod.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Views\" />
     <Folder Include="Views\TabbedPageSample\" />
+    <Folder Include="Views\PickerNavigation\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
